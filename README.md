@@ -9,3 +9,7 @@ These are the dotfiles that I use for my desktop Arch Linux install with i3.
   * Conky
 * Lock Screen
   * i3lock
+* Application Launcher
+  * rofi
+* Misc
+  * compton
