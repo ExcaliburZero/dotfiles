@@ -127,6 +127,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Setup dual monitors
 exec xrandr --output HDMI3 --auto --left-of VGA1
 
+# Move workspaces between monitors
+bindsym $mod+semicolon move workspace to output right
+
 # Lock the compute
 bindsym $mod+l exec i3lock
 
