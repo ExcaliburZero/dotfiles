@@ -1,7 +1,7 @@
 background        no
 out_to_console 	  yes
 out_to_x	  no
-update_interval	  2
+update_interval	  1
 total_run_times	  0
 short_units	  yes
 pad_percents	  3
@@ -10,8 +10,18 @@ override_utf8_locale yes
 
 TEXT
 ,[
-{"full_text": "  $acpitemp°C", "color": "\#DC322F"},
-{"full_text": "  $memperc%", "color": "\#B58900"},
-{"full_text": "  $cpu%", "color": "\#268BD2"},
-{"full_text": "  $time", "color": "\#33CC99"}
+# Packages to Update
+{"full_text": "  ${execi 200 pacman -Quq | wc -l}", "color": "\#AEB404", "separator": false, "separator_block_width": 20},
+
+# Temperature
+{"full_text": "  $acpitemp°C", "color": "\#DC322F", "separator": false, "separator_block_width": 20},
+
+# Memory
+{"full_text": "  $memperc%", "color": "\#B58900", "separator": false, "separator_block_width": 20},
+
+# CPU
+{"full_text": "  $cpu%", "color": "\#268BD2", "separator": false, "separator_block_width": 20},
+
+# Time and Date
+{"full_text": "  ${time %a %b %d, %H:%M}", "color": "\#33CC99", "separator": false, "separator_block_width": 20}
 ]
