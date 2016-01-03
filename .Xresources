@@ -1,0 +1,21 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+
+! Opacity
+rofi.opacity: 90
+
+! Window colors
+! -------------
+! Background, Border, Dashed Line
+rofi.color-window: #386068, #104048, #104048
+
+! Entry colors
+! ------------
+! Every other background (Odd)
+! Text color for entries other than selected
+! Every other background (Even)
+! Background color for selected entry
+! Text color for selected entry
+rofi.color-normal: #386068, #D8E8E8, #386068, #104048, #F0F0F0
