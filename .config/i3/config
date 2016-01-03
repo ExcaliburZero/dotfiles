@@ -130,8 +130,10 @@ exec xrandr --output HDMI3 --auto --left-of VGA1
 # Move workspaces between monitors
 bindsym $mod+semicolon move workspace to output right
 
-# Lock the compute
-bindsym $mod+l exec i3lock
+# Setup the computer lock
+set $lock_background '/home/chris/Pictures/Wallpapers/Base Arch Wallpaper2.png'
+set $lock_color '000000'
+bindsym $mod+l exec i3lock -i $lock_background --color=$lock_color
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
