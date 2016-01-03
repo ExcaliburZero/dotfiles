@@ -133,6 +133,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+# Assign certain workspaces to certain monitors
+workspace $ws1 output HDMI3
+workspace $ws2 output VGA1
+workspace $ws9 output HDMI3
+workspace $ws10 output VGA1
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -156,6 +162,18 @@ bindsym $mod+l exec i3lock -i $lock_background --color=$lock_color
 
 # Setup compton as the window compositor
 exec compton -b
+
+# # Assign applications to specific workspaces
+assign [class="Evolution"] $ws9
+assign [class="Skype"] $ws10
+
+# Startup Applications
+exec evolution
+exec skype
+
+# Set startup workspaces
+exec i3-msg workspace $ws1
+exec i3-msg workspace $ws2
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
