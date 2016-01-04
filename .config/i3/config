@@ -99,7 +99,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Don't auto move mouse to new workspaces
-mouse_warping none
+#mouse_warping none
+
+# Set focus to not follow mouse
+focus_follows_mouse no
 
 # Name the workspaces
 set $ws1 1:
