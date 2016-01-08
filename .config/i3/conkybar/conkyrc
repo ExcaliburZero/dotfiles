@@ -10,6 +10,9 @@ override_utf8_locale yes
 
 TEXT
 ,[
+# MusicPlayerDaemon Information
+{"full_text": "𝄞  ${mpd_title}", "color": "\#33CC99", "separator": false, "separator_block_width": 20},
+
 # Packages to Update
 {"full_text": "  ${execi 200 pacman -Quq | wc -l}", "color": "\#AEB404", "separator": false, "separator_block_width": 20},
 
