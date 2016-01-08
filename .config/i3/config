@@ -177,6 +177,7 @@ assign [class="Skype"] $ws10
 # Startup Applications
 exec evolution
 exec skype
+exec mpd
 
 # Set startup workspaces
 exec i3-msg workspace $ws1
