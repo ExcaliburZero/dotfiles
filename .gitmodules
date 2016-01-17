@@ -1,0 +1,3 @@
+[submodule ".config/i3/conkybar/github-notification-number"]
+	path = .config/i3/conkybar/github-notification-number
+	url = git@github.com:ExcaliburZero/github-notification-number.git
