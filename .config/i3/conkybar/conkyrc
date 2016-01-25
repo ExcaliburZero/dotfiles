@@ -20,7 +20,7 @@ TEXT
 {"full_text": "  ${execi 200 bash -i -c 'echo $GH_NOTIFICATION_TOKEN | ~/.config/i3/conkybar/github-notification-number/notifications.py'}", "color": "\#D678F5", "separator": false, "separator_block_width": 20},
 
 # Temperature
-{"full_text": "  $acpitemp°C", "color": "\#DC322F", "separator": false, "separator_block_width": 20},
+{"full_text": "  ${exec sensors | grep 'Core 0' | awk '{print $3}'}", "color": "\#DC322F", "separator": false, "separator_block_width": 20},
 
 # Memory
 {"full_text": "  $memperc%", "color": "\#B58900", "separator": false, "separator_block_width": 20},
