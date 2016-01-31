@@ -198,6 +198,10 @@ exec xrandr --output HDMI3 --auto --left-of VGA1
 # Move workspaces between monitors
 bindsym $mod+semicolon move workspace to output right
 
+# Volume control shortcuts
+bindsym $mod+comma exec amixer set Master -q 3%-
+bindsym $mod+period exec amixer set Master -q 3%+
+
 # Setup the computer lock
 set $lock_background '/home/chris/Pictures/Wallpapers/Base Arch Wallpaper2.png'
 set $lock_color '000000'
