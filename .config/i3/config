@@ -37,6 +37,9 @@ bindsym $mod+Return exec terminator
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Open up a firefox window
+bindsym $mod+Shift+f exec firefox-developer
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 
